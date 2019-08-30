@@ -1,1 +1,1 @@
-# [zainzahran.tech](zainzahran.tech)
+# [zainzahran.tech](https://www.zainzahran.tech)
