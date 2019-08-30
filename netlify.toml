@@ -1,0 +1,9 @@
+[build]
+  command = "yarn run build"
+  publish="zainzahran-tech/build"
+  base = "zainzahran-tech"
+
+[[redirects]]
+	from = "/*"
+	to = "/index.html"
+	status = 200
