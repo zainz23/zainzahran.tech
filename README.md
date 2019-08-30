@@ -1,1 +1,1 @@
-# zainz23.github.io
+# [zainzahran.tech](zainzahran.tech)
