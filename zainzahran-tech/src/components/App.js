@@ -1,6 +1,5 @@
-import React, {Component} from 'react';
+import React, {Component, useState} from 'react';
 import './App.css';
-import Button from '@material-ui/core/Button';
 import {Navigation} from "@material-ui/icons";
 import { NavLink, Switch, Route } from 'react-router-dom';
 
@@ -8,14 +7,16 @@ import { NavLink, Switch, Route } from 'react-router-dom';
 
 
 function App() {
+    const [navToggle, setNavToggle] = useState(true);
     class Navigation extends Component {
         render() {
             return (
                 <nav>
                     <ul>
-                        <li><NavLink exact activeClassName="current" to='/'>Home</NavLink></li>
+                        <li><NavLink exact activeClassName="current" to='/' >Home</NavLink></li>
                         <li><NavLink exact activeClassName="current" to='/about'>About</NavLink></li>
                         <li><NavLink exact activeClassName="current" to='/contact'>Contact</NavLink></li>
+                        <li><NavLink exact activeClassName="current" to='/CS428' >CS 428</NavLink></li>
                     </ul>
                 </nav>
             );
@@ -42,20 +43,26 @@ function App() {
             <p>You can reach me via email: <strong>hello@example.com</strong></p>
         </div>
     );
+    const CS428 = () => (
+        <div className='CS428'>
+            <h1>Virtual and Augmented Reality</h1>
+        </div>
+    );
 
     const Main = () => (
         <Switch>
-            <Route exact path='/' component={Home}/>
-            <Route exact path='/about' component={About}/>
-            <Route exact path='/contact' component={Contact} />
+            <Route exact path='/' component={Home} />
+                <Route exact path='/about' component={About}/>
+                <Route exact path='/contact' component={Contact} />
+            <Route exact path='/CS428' component={CS428}  />
         </Switch>
     );
-
+    let navHeader = navToggle ? <Navigation/> : '';
 
     return (
       <div className='app'>
-          <h1>React Router Demo</h1>
-          <Navigation />
+          <h1>Zain Zahran</h1>
+          {navHeader}
           <Main/>
       </div>
   );
