@@ -8,6 +8,7 @@ import Contact from './Contact.js';
 import CS428 from './CS428/CS428';
 // Navigation + Main Routing
 import Navigation from './Navigation';
+import {withRouter} from 'react-router-dom';
 
 
 
@@ -15,11 +16,11 @@ class App extends React.Component {
     constructor (props) {
         super(props);
         this.state = {
-            navToggle: false
+            navToggle: true
         }
     };
     componentDidMount() {
-        let currentRoute = this.props.location;
+        let currentRoute = this.props.location.pathname;
         console.log(currentRoute);
         if (currentRoute === '/CS428') {
             this.setState({
@@ -48,4 +49,4 @@ class App extends React.Component {
     }
 }
 
-export default App;
+export default withRouter(App);
