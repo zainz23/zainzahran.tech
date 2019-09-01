@@ -2,17 +2,15 @@ import React, {Component, useState} from 'react';
 import './App.css';
 import {Navigation} from "@material-ui/icons";
 import { NavLink, Switch, Route } from 'react-router-dom';
+// Component Imports
+import Home from './Home.js';
+import About from './About.js';
+import Contact from './Contact.js';
 // Expansion
 import ExpansionPanel from '@material-ui/core/ExpansionPanel';
 import ExpansionPanelSummary from '@material-ui/core/ExpansionPanelSummary';
 import ExpansionPanelDetails from '@material-ui/core/ExpansionPanelDetails';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-
-
-
-
-
-
 
 function App() {
     const [navToggle, setNavToggle] = useState(true);
@@ -30,25 +28,11 @@ function App() {
             );
         }
     }
-    const Home = () => (
-        <div className='home'>
-        </div>
-    );
 
-    const About = () => (
-        <div className='about'>
-        </div>
-    );
-
-    const Contact = () => (
-        <div className='contact'>
-            <h1>Contact Me</h1>
-            <p>You can reach me via email: <strong>zainzahran23@gmail.com</strong></p>
-        </div>
-    );
     const CS428 = () => (
         <div className='CS428'>
             <h1>Virtual and Augmented Reality</h1>
+            {/*HW 1*/}
             <ExpansionPanel>
                 <ExpansionPanelSummary
                     expandIcon={<ExpandMoreIcon />}
