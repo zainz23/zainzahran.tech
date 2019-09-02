@@ -9,6 +9,7 @@ import CS428 from './CS428/CS428';
 // Navigation + Main Routing
 import Navigation from './Navigation';
 import {withRouter} from 'react-router-dom';
+import {Redirect} from "react-router";
 
 
 
@@ -21,7 +22,6 @@ class App extends React.Component {
     };
     componentDidMount() {
         let currentRoute = this.props.location.pathname;
-        console.log(currentRoute);
         if (currentRoute === '/CS428') {
             this.setState({
                 navToggle: false
@@ -36,6 +36,7 @@ class App extends React.Component {
                 <Route exact path='/about' component={About}/>
                 <Route exact path='/contact' component={Contact} />
                 <Route exact path='/CS428' component={CS428}  />
+                <Redirect to="/" />
             </Switch>
         );
         let navHeader = this.state.navToggle ? <Navigation/> : '';
