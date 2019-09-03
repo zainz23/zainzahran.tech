@@ -2,7 +2,6 @@ import React from "react";
 import dataset from './dataset'
 
 // Dialog Popup
-import Button from '@material-ui/core/Button';
 import Dialog from '@material-ui/core/Dialog';
 import Divider from '@material-ui/core/Divider';
 import AppBar from '@material-ui/core/AppBar';
@@ -13,12 +12,17 @@ import CloseIcon from '@material-ui/icons/Close';
 import Slide from '@material-ui/core/Slide';
 import Paper from "@material-ui/core/Paper";
 import DescriptionIcon from '@material-ui/icons/Description';
+import Card from '@material-ui/core/Card';
+import CardActionArea from '@material-ui/core/CardActionArea';
+import ButtonBase from '@material-ui/core/ButtonBase';          // Makes card clickable
+import CardContent from '@material-ui/core/CardContent';
+import CardMedia from '@material-ui/core/CardMedia';
 
 // Transition
 const Transition = React.forwardRef(function Transition(props, ref) {
     return <Slide direction="up" ref={ref} {...props} />;
 });
-console.log(dataset[0].name);
+
 const useStyles = {
     appBar: {
         position: 'relative',
@@ -62,9 +66,31 @@ class CS428 extends React.Component {
                 <h1>Zain Zahran</h1>
                 <h1>Virtual and Augmented Reality</h1>
                 {/* HW 1 */}
-                <Button variant="outlined" color="primary" onClick={() => this.handleClickOpen(1)} >
-                    {dataset[0].abbrev}
-                </Button>
+                <ButtonBase
+                    onClick={() => this.handleClickOpen(1)}
+                >
+                <Card
+                    style={{
+                        width: 300
+                    }}
+                >
+                    <CardActionArea>
+                        <CardMedia
+                            image={dataset[0].img}
+                            title="VR vs AR"
+                            style ={{height: 100}}
+                        />
+                        <CardContent>
+                            <Typography gutterBottom variant="h5" component="h2">
+                                {dataset[0].name}
+                            </Typography>
+                            <Typography variant="body2" color="textSecondary" component="p">
+                                {dataset[0].desc}
+                            </Typography>
+                        </CardContent>
+                    </CardActionArea>
+                </Card>
+                </ButtonBase>
                 <Dialog fullScreen open={this.state.arr[1].isActive} onClose={() => this.handleClickClose(1)} TransitionComponent={Transition}>
                     <AppBar style = {useStyles.appBar}>
                         <Toolbar>
@@ -75,7 +101,6 @@ class CS428 extends React.Component {
                             <Typography variant="h6" className={useStyles.title} style={{paddingLeft: 10}}>
                                 {dataset[0].name}
                             </Typography>
-
                         </Toolbar>
                     </AppBar>
                     <Divider />
@@ -92,7 +117,11 @@ class CS428 extends React.Component {
                         </div>
                     </Paper>
                 </Dialog>
+                {/* END HW 1*/}
+                {/* For HW2, HW3, etc. loop data from JSON*/}
+                {/* Categorize by HW, Project, etc.*/}
             </div>
+
         );
     };
 }
