@@ -63,62 +63,78 @@ class CS428 extends React.Component {
 
         return (
             <div className='CS428'>
+
                 <h1>Zain Zahran</h1>
                 <h1>Virtual and Augmented Reality</h1>
-                {/* HW 1 */}
-                <ButtonBase
-                    onClick={() => this.handleClickOpen(1)}
-                >
-                <Card
-                    style={{
-                        width: 300
-                    }}
-                >
-                    <CardActionArea>
-                        <CardMedia
-                            image={dataset[0].img}
-                            title="VR vs AR"
-                            style ={{height: 100}}
-                        />
-                        <CardContent>
-                            <Typography gutterBottom variant="h5" component="h2">
-                                {dataset[0].name}
-                            </Typography>
-                            <Typography variant="body2" color="textSecondary" component="p">
-                                {dataset[0].desc}
-                            </Typography>
-                        </CardContent>
-                    </CardActionArea>
-                </Card>
-                </ButtonBase>
-                <Dialog fullScreen open={this.state.arr[1].isActive} onClose={() => this.handleClickClose(1)} TransitionComponent={Transition}>
-                    <AppBar style = {useStyles.appBar}>
-                        <Toolbar>
-                            <IconButton edge="start" color="inherit" onClick={() => this.handleClickClose(1)} aria-label="close">
-                                <CloseIcon />
-                            </IconButton>
-                            <DescriptionIcon/>
-                            <Typography variant="h6" className={useStyles.title} style={{paddingLeft: 10}}>
-                                {dataset[0].name}
-                            </Typography>
-                        </Toolbar>
-                    </AppBar>
-                    <Divider />
-                    <Paper
-                        style={{
-                            margin: "1.5em",
-                            textAlign: 'left',
-                            display: 'inline-block',
-                            padding: '8px 24px 24px',
-                            minHeight: '85vh',
-                        }}>
-                        <div>
-                            <iframe src={dataset[0].src} width="100%" style={{minHeight: '83vh'}} title={dataset[0].abbrev} />
+                {/*<video id="background-video" loop autoPlay*/}
+                       {/*style={{*/}
+                           {/*position: "fixed",*/}
+                           {/*right: 0,*/}
+                           {/*bottom: 0,*/}
+                           {/*minWidth: "100%",*/}
+                           {/*minHeight: "100%",*/}
+                       {/*}}>*/}
+                    {/*<source src="https://bit.ly/2Kl5qnz" type="video/mp4" />*/}
+                    {/*<source src="https://bit.ly/2Kl5qnz" type="video/ogg" />*/}
+                    {/*Your browser does not support the video tag.*/}
+                {/*</video>*/}
+                {
+                    dataset.map((item, i) =>
+                        <div style={{display: 'inline-block'}}>
+                            <ButtonBase
+                                onClick={() => this.handleClickOpen(i)}
+                            >
+                                <Card
+                                    style={{
+                                        width: 300
+                                    }}
+                                >
+                                    <CardActionArea>
+                                        <CardMedia
+                                            image={dataset[i].img}
+                                            title="VR vs AR"
+                                            style ={{height: 160}}
+                                        />
+                                        <CardContent>
+                                            <Typography gutterBottom variant="h5" component="h2">
+                                                {dataset[i].name}
+                                            </Typography>
+                                            <Typography variant="body2" color="textSecondary" component="p">
+                                                {dataset[i].desc}
+                                            </Typography>
+                                        </CardContent>
+                                    </CardActionArea>
+                                </Card>
+                            </ButtonBase>
+                            <Dialog fullScreen open={this.state.arr[i].isActive} onClose={() => this.handleClickClose(i)} TransitionComponent={Transition}>
+                                <AppBar style = {useStyles.appBar}>
+                                    <Toolbar>
+                                        <IconButton edge="start" color="inherit" onClick={() => this.handleClickClose(i)} aria-label="close">
+                                            <CloseIcon />
+                                        </IconButton>
+                                        <DescriptionIcon/>
+                                        <Typography variant="h6" className={useStyles.title} style={{paddingLeft: 10}}>
+                                            {dataset[i].name}
+                                        </Typography>
+                                    </Toolbar>
+                                </AppBar>
+                                <Divider />
+                                <Paper
+                                    style={{
+                                        margin: "1.5em",
+                                        textAlign: 'left',
+                                        display: 'inline-block',
+                                        padding: '8px 24px 24px',
+                                        minHeight: '85vh',
+                                    }}>
+                                    <div>
+                                        <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}} title={dataset[i].abbrev} />
+                                    </div>
+                                </Paper>
+                            </Dialog>
                         </div>
-                    </Paper>
-                </Dialog>
-                {/* END HW 1*/}
-                {/* For HW2, HW3, etc. loop data from JSON*/}
+                    )
+                }
                 {/* Categorize by HW, Project, etc.*/}
             </div>
 
