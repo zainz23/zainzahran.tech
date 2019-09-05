@@ -92,7 +92,7 @@ class CS428 extends React.Component {
                                     <CardActionArea>
                                         <CardMedia
                                             image={dataset[i].img}
-                                            title="VR vs AR"
+                                            title={dataset[i].title}
                                             style ={{height: 160}}
                                         />
                                         <CardContent>

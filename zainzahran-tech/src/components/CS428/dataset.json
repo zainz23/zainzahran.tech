@@ -4,6 +4,7 @@
     "abbrev": "HW1",
     "week": "1",
     "type": "hw",
+    "title": "AR vs VR",
     "img": "/assets/hw1/thumbnail.png",
     "src": "https://drive.google.com/file/d/1PacBsTlS_1wjT5-ISuFSxzglIcv97QGY/preview",
     "desc": "Advantages and Disadvantages of the different VR and AR platforms"
@@ -13,6 +14,7 @@
     "abbrev": "HW2",
     "week": "2",
     "type": "hw",
+    "title": "Vuforia Demo",
     "img": "/assets/hw2/thumbnail.png",
     "src": "https://drive.google.com/file/d/1tLPo2tiil9euhYRIqHf6V87U6KSBTVGX/preview",
     "desc": "Vuforia set up and initial thoughts of uses for AR technology."
