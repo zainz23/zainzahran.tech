@@ -82,7 +82,7 @@ class CS428 extends React.Component {
                 {/*</video>*/}
                 {
                     dataset.map((item, i) =>
-                        <div style={{display: 'inline-block'}}>
+                        <div style={{display: 'inline-block'}} key={i}>
                             <Tooltip title={dataset[i].title} TransitionComponent={Zoom}>
                             <ButtonBase
                                 onClick={() => this.handleClickOpen(i)}
