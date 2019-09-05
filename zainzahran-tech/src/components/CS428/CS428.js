@@ -17,6 +17,8 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import ButtonBase from '@material-ui/core/ButtonBase';          // Makes card clickable
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
+import Tooltip from "@material-ui/core/Tooltip";
+import {Zoom} from "@material-ui/core";
 
 // Transition
 const Transition = React.forwardRef(function Transition(props, ref) {
@@ -81,6 +83,7 @@ class CS428 extends React.Component {
                 {
                     dataset.map((item, i) =>
                         <div style={{display: 'inline-block'}}>
+                            <Tooltip title={dataset[i].title} TransitionComponent={Zoom}>
                             <ButtonBase
                                 onClick={() => this.handleClickOpen(i)}
                             >
@@ -106,6 +109,7 @@ class CS428 extends React.Component {
                                     </CardActionArea>
                                 </Card>
                             </ButtonBase>
+                            </Tooltip>
                             <Dialog fullScreen open={this.state.arr[i].isActive} onClose={() => this.handleClickClose(i)} TransitionComponent={Transition}>
                                 <AppBar style = {useStyles.appBar}>
                                     <Toolbar>
