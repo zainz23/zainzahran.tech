@@ -9,9 +9,9 @@ html {
 }
 
 .app {
-  width: 960px;
+  width: 75%;
   margin: 0 auto;
-  padding: 20px;
+  padding: 10px;
 }
 
 nav ul {
