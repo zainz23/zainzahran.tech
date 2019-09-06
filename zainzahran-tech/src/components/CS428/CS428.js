@@ -68,18 +68,6 @@ class CS428 extends React.Component {
 
                 <h1>Zain Zahran</h1>
                 <h1>Virtual and Augmented Reality</h1>
-                {/*<video id="background-video" loop autoPlay*/}
-                       {/*style={{*/}
-                           {/*position: "fixed",*/}
-                           {/*right: 0,*/}
-                           {/*bottom: 0,*/}
-                           {/*minWidth: "100%",*/}
-                           {/*minHeight: "100%",*/}
-                       {/*}}>*/}
-                    {/*<source src="https://bit.ly/2Kl5qnz" type="video/mp4" />*/}
-                    {/*<source src="https://bit.ly/2Kl5qnz" type="video/ogg" />*/}
-                    {/*Your browser does not support the video tag.*/}
-                {/*</video>*/}
                 {
                     dataset.map((item, i) =>
                         <div style={{display: 'inline-block'}} key={i}>
