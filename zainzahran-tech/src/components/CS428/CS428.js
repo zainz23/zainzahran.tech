@@ -41,7 +41,8 @@ class CS428 extends React.Component {
         this.state = {
             arr: [
                 { name: "hw1", isActive: false },
-                { name: "hw2", isActive: false }
+                { name: "hw2", isActive: false },
+                { name: "hw3", isActive: false }
             ]
         };
         this.handleClickOpen = this.handleClickOpen.bind(this);
@@ -68,6 +69,7 @@ class CS428 extends React.Component {
 
                 <h1>Zain Zahran</h1>
                 <h1>Virtual and Augmented Reality</h1>
+                <h2>Homeworks</h2>
                 {
                     dataset.map((item, i) =>
                         <div style={{display: 'inline-block'}} key={i}>
@@ -127,6 +129,7 @@ class CS428 extends React.Component {
                         </div>
                     )
                 }
+                <h2>Projects</h2>
                 {/* Categorize by HW, Project, etc.*/}
             </div>
 

@@ -18,5 +18,15 @@
     "img": "/assets/hw2/thumbnail.png",
     "src": "https://drive.google.com/file/d/1tLPo2tiil9euhYRIqHf6V87U6KSBTVGX/preview",
     "desc": "Vuforia set up and initial thoughts of uses for AR technology."
+  },
+  {
+    "name": "Homework 3",
+    "abbrev": "HW3",
+    "week": "3",
+    "type": "hw",
+    "title": "Google Translate AR",
+    "img": "/assets/hw3/thumbnail.png",
+    "src": "https://drive.google.com/file/d/1nXggnt99mLOEwGK9GaiUO_rCXFx_PZko/preview",
+    "desc": "Using Google Translate with a camera on real world foreign languages"
   }
 ]
