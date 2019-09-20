@@ -28,5 +28,15 @@
     "img": "/assets/hw3/thumbnail.png",
     "src": "https://drive.google.com/file/d/1nXggnt99mLOEwGK9GaiUO_rCXFx_PZko/preview",
     "desc": "Using Google Translate with a camera on real world foreign languages"
+  },
+  {
+    "name": "Homework 4",
+    "abbrev": "HW4",
+    "week": "4",
+    "type": "hw",
+    "title": "Sky Viewing in AR",
+    "img": "/assets/hw4/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/1N8e76eB2VpFbYsRo7BvUsfI4C0pbk6-l/preview",
+    "desc": "Identifying galaxies, stars, constellations, planets, and satellites with AR applications"
   }
 ]

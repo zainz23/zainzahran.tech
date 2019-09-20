@@ -42,7 +42,8 @@ class CS428 extends React.Component {
             arr: [
                 { name: "hw1", isActive: false },
                 { name: "hw2", isActive: false },
-                { name: "hw3", isActive: false }
+                { name: "hw3", isActive: false },
+                { name: "hw4", isActive: false }
             ]
         };
         this.handleClickOpen = this.handleClickOpen.bind(this);
