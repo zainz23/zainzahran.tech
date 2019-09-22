@@ -38,5 +38,16 @@
     "img": "/assets/hw4/thumbnail.jpg",
     "src": "https://drive.google.com/file/d/1N8e76eB2VpFbYsRo7BvUsfI4C0pbk6-l/preview",
     "desc": "Identifying galaxies, stars, constellations, planets, and satellites with AR applications"
+  },
+  {
+    "name": "You Can't Judge a Book by Its Cover",
+    "abbrev": "p1",
+    "week": "5",
+    "type": "project",
+    "title": "Project 1",
+    "img": "/assets/p1/thumbnail.png",
+    "src": "https://drive.google.com/file/d/13kxx3HHXjKEXrYhM2A3tS-bMbw2t1muo/preview",
+    "youtube": "https://www.youtube.com/embed/BFdMrDOx_CM",
+    "desc": "Using AR to display information on books"
   }
 ]

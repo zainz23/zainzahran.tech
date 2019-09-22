@@ -43,7 +43,8 @@ class CS428 extends React.Component {
                 { name: "hw1", isActive: false },
                 { name: "hw2", isActive: false },
                 { name: "hw3", isActive: false },
-                { name: "hw4", isActive: false }
+                { name: "hw4", isActive: false },
+                { name: "p1",  isActive: false}
             ]
         };
         this.handleClickOpen = this.handleClickOpen.bind(this);
@@ -70,68 +71,155 @@ class CS428 extends React.Component {
 
                 <h1>Zain Zahran</h1>
                 <h1>Virtual and Augmented Reality</h1>
-                <h2>Homeworks</h2>
+                {/* HOMEWORKS */}
+                <h2 style={{paddingBottom: 20, paddingTop: 20}} >Homeworks</h2>
                 {
-                    dataset.map((item, i) =>
-                        <div style={{display: 'inline-block'}} key={i}>
-                            <Tooltip title={dataset[i].title} TransitionComponent={Zoom}>
-                            <ButtonBase
-                                onClick={() => this.handleClickOpen(i)}
-                            >
-                                <Card
-                                    style={{
-                                        width: 300
-                                    }}
-                                >
-                                    <CardActionArea>
-                                        <CardMedia
-                                            image={dataset[i].img}
-                                            title={dataset[i].title}
-                                            style ={{height: 160}}
-                                        />
-                                        <CardContent>
-                                            <Typography gutterBottom variant="h5" component="h2">
-                                                {dataset[i].name}
-                                            </Typography>
-                                            <Typography variant="body2" color="textSecondary" component="p">
-                                                {dataset[i].desc}
-                                            </Typography>
-                                        </CardContent>
-                                    </CardActionArea>
-                                </Card>
-                            </ButtonBase>
-                            </Tooltip>
-                            <Dialog fullScreen open={this.state.arr[i].isActive} onClose={() => this.handleClickClose(i)} TransitionComponent={Transition}>
-                                <AppBar style = {useStyles.appBar}>
-                                    <Toolbar>
-                                        <IconButton edge="start" color="inherit" onClick={() => this.handleClickClose(i)} aria-label="close">
-                                            <CloseIcon />
-                                        </IconButton>
-                                        <DescriptionIcon/>
-                                        <Typography variant="h6" className={useStyles.title} style={{paddingLeft: 10}}>
-                                            {dataset[i].name}
-                                        </Typography>
-                                    </Toolbar>
-                                </AppBar>
-                                <Divider />
-                                <Paper
-                                    style={{
-                                        margin: "1.5em",
-                                        textAlign: 'left',
-                                        display: 'inline-block',
-                                        padding: '8px 24px 24px',
-                                        minHeight: '85vh',
-                                    }}>
-                                    <div>
-                                        <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}} title={dataset[i].abbrev} />
-                                    </div>
-                                </Paper>
-                            </Dialog>
-                        </div>
-                    )
+                    // eslint-disable-next-line
+                    dataset.map((item, i) => {
+                        if (dataset[i].type === "hw") {
+                            return (
+                                <div style={{display: 'inline-block'}} key={i}>
+                                    <Tooltip title={dataset[i].title} TransitionComponent={Zoom}>
+                                        <ButtonBase
+                                            onClick={() => this.handleClickOpen(i)}
+                                        >
+                                            <Card
+                                                style={{
+                                                    width: 300
+                                                }}
+                                            >
+                                                <CardActionArea>
+                                                    <CardMedia
+                                                        image={dataset[i].img}
+                                                        title={dataset[i].title}
+                                                        style={{height: 160}}
+                                                    />
+                                                    <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="h2">
+                                                            {dataset[i].name}
+                                                        </Typography>
+                                                        <Typography variant="body2" color="textSecondary" component="p">
+                                                            {dataset[i].desc}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </CardActionArea>
+                                            </Card>
+                                        </ButtonBase>
+                                    </Tooltip>
+                                    <Dialog fullScreen open={this.state.arr[i].isActive}
+                                            onClose={() => this.handleClickClose(i)} TransitionComponent={Transition}>
+                                        <AppBar style={useStyles.appBar}>
+                                            <Toolbar>
+                                                <IconButton edge="start" color="inherit"
+                                                            onClick={() => this.handleClickClose(i)} aria-label="close">
+                                                    <CloseIcon/>
+                                                </IconButton>
+                                                <DescriptionIcon/>
+                                                <Typography variant="h6" className={useStyles.title}
+                                                            style={{paddingLeft: 10}}>
+                                                    {dataset[i].name}
+                                                </Typography>
+                                            </Toolbar>
+                                        </AppBar>
+                                        <Divider/>
+                                        <Paper
+                                            style={{
+                                                margin: "1.5em",
+                                                textAlign: 'left',
+                                                display: 'inline-block',
+                                                padding: '8px 24px 24px',
+                                                minHeight: '85vh',
+                                            }}>
+                                            <div>
+                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}
+                                                        title={dataset[i].abbrev}/>
+                                            </div>
+                                        </Paper>
+                                    </Dialog>
+                                </div>
+                            )
+                        }
+                    })
                 }
-                <h2>Projects</h2>
-                {/* Categorize by HW, Project, etc.*/}
+                {/* PROJECTS */}
+                <h2 style={{paddingBottom: 20, paddingTop: 20}}>Projects</h2>
+                {
+                    // eslint-disable-next-line
+                    dataset.map((item, i) => {
+                        if (dataset[i].type === "project") {
+                            return (
+                                <div style={{display: 'inline-block'}} key={i}>
+                                    <Tooltip title={dataset[i].title} TransitionComponent={Zoom}>
+                                        <ButtonBase
+                                            onClick={() => this.handleClickOpen(i)}
+                                        >
+                                            <Card
+                                                style={{
+                                                    width: 300
+                                                }}
+                                            >
+                                                <CardActionArea>
+                                                    <CardMedia
+                                                        image={dataset[i].img}
+                                                        title={dataset[i].title}
+                                                        style={{height: 160}}
+                                                    />
+                                                    <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="h2">
+                                                            {dataset[i].name}
+                                                        </Typography>
+                                                        <Typography variant="body2" color="textSecondary" component="p">
+                                                            {dataset[i].desc}
+                                                        </Typography>
+                                                    </CardContent>
+                                                </CardActionArea>
+                                            </Card>
+                                        </ButtonBase>
+                                    </Tooltip>
+                                    <Dialog fullScreen open={this.state.arr[i].isActive}
+                                            onClose={() => this.handleClickClose(i)} TransitionComponent={Transition}>
+                                        <AppBar style={useStyles.appBar}>
+                                            <Toolbar>
+                                                <IconButton edge="start" color="inherit"
+                                                            onClick={() => this.handleClickClose(i)} aria-label="close">
+                                                    <CloseIcon/>
+                                                </IconButton>
+                                                <DescriptionIcon/>
+                                                <Typography variant="h6" className={useStyles.title}
+                                                            style={{paddingLeft: 10}}>
+                                                    {dataset[i].name}
+                                                </Typography>
+                                            </Toolbar>
+                                        </AppBar>
+                                        <Divider/>
+                                        <Paper
+                                            style={{
+                                                margin: "1.5em",
+                                                textAlign: 'left',
+                                                display: 'inline-block',
+                                                minHeight: '85vh',
+                                            }}>
+                                            <div>
+                                                {/* DEMO VIDEO */}
+                                                <h1>Demo</h1>
+                                                <iframe width="560" height="315"
+                                                        src={dataset[i].youtube} frameBorder="0"
+                                                        style={{width:'100%', minHeight: '63vh'} }
+                                                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                                        allowFullScreen
+                                                        title={dataset[i].abbrev}/>
+                                                {/* DOCUMENTATION */}
+                                                <h1>Documentation</h1>
+                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}
+                                                        title={dataset[i].abbrev}/>
+                                            </div>
+                                        </Paper>
+                                    </Dialog>
+                                </div>
+                            )
+                        }
+                    })
+                }
             </div>
 
         );
