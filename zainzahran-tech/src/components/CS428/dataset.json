@@ -40,6 +40,16 @@
     "desc": "Identifying galaxies, stars, constellations, planets, and satellites with AR applications"
   },
   {
+    "name": "Homework 5/6",
+    "abbrev": "HW5-6",
+    "week": "5",
+    "type": "hw",
+    "title": "Project 1 reviews",
+    "img": "/assets/hw5/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/1_IzIk3kR4oW16SvBlIY8XE46CZ6MqfUa/preview",
+    "desc": "Reviewing and testing two of my favorite projects from project 1"
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
