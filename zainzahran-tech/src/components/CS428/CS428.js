@@ -45,6 +45,7 @@ class CS428 extends React.Component {
                 { name: "hw3", isActive: false },
                 { name: "hw4", isActive: false },
                 { name: "hw5", isActive: false },
+                { name: "hw7", isActive: false },
                 { name: "p1",  isActive: false}
             ]
         };

@@ -50,6 +50,16 @@
     "desc": "Reviewing and testing two of my favorite projects from project 1"
   },
   {
+    "name": "Homework 7",
+    "abbrev": "HW7",
+    "week": "7",
+    "type": "hw",
+    "title": "Furniture AR apps",
+    "img": "/assets/hw7/thumbnail.png",
+    "src": "https://drive.google.com/file/d/1GHLgurPAKFHXXXyU-TMpsXLxeU0coUpl/preview",
+    "desc": "Testing out apps that allow you to design, model, and decorate your home space."
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
