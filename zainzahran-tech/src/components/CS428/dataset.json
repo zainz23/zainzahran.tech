@@ -60,6 +60,16 @@
     "desc": "Testing out apps that allow you to design, model, and decorate your home space."
   },
   {
+    "name": "Homework 8",
+    "abbrev": "HW8",
+    "week": "8",
+    "type": "hw",
+    "title": "Helpful AR technology",
+    "img": "/assets/hw8/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/170Qt7V-mJlkqp8Eiuwue1QbW-dF4eYXX/preview",
+    "desc": "Discussing how to make AR tech helpful and not annoying."
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
