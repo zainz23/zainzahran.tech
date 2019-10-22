@@ -79,5 +79,16 @@
     "src": "https://drive.google.com/file/d/13kxx3HHXjKEXrYhM2A3tS-bMbw2t1muo/preview",
     "youtube": "https://www.youtube.com/embed/wzazlhwVURw",
     "desc": "Using AR to display information on books"
+  },
+  {
+    "name": "Taking care of Business",
+    "abbrev": "p2",
+    "week": "8",
+    "type": "project",
+    "title": "Project 2",
+    "img": "/assets/p2/thumbnail.png",
+    "src": "https://drive.google.com/file/d/13kxx3HHXjKEXrYhM2A3tS-bMbw2t1muo/preview",
+    "youtube": "https://www.youtube.com/watch?v=2X53smUle9w&feature=youtu.be",
+    "desc": "Simulating office spaces in VR!"
   }
 ]
