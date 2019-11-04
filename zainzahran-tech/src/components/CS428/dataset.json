@@ -80,6 +80,16 @@
     "desc": "Proposal for Zain and Juan's VR game - Exblock."
   },
   {
+    "name": "Student's Choice 11/4",
+    "abbrev": "HW11",
+    "week": "11",
+    "type": "hw",
+    "title": "Students Choice 11/4",
+    "img": "/assets/hw11/thumbnail.png",
+    "src": "https://drive.google.com/file/d/1F9j_9D89HORxuhyGDg_WnghjH7n5Mf9C/preview",
+    "desc": "Student's Choice 11/4 - Varjo's VR-2 Pro"
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
