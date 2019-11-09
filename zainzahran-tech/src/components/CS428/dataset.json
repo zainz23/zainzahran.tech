@@ -90,6 +90,16 @@
     "desc": "Student's Choice 11/4 - BOXVR"
   },
   {
+    "name": "Week 11 Collaboration",
+    "abbrev": "HW12",
+    "week": "11",
+    "type": "hw",
+    "title": "Week 11 Collaboration",
+    "img": "/assets/hw12/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/1F9j_9D89HORxuhyGDg_WnghjH7n5Mf9C/preview",
+    "desc": "Giving critical analysis (positives, and negatives) of Holoportation"
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
