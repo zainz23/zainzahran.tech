@@ -120,5 +120,16 @@
     "src": "https://drive.google.com/file/d/1o3Ez4CB_ggRd9GB_oCux5Ee0w8RW6GVw/preview",
     "youtube": "https://www.youtube.com/embed/2X53smUle9w",
     "desc": "Simulating office spaces in VR!"
+  },
+  {
+    "name": "BOXVR - Student's Choice",
+    "abbrev": "p3",
+    "week": "11",
+    "type": "project",
+    "title": "Student's Choice",
+    "img": "/assets/hw11/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/1rJKZ37C3Hn5cuS2PXpZuGje1iSrbhN4W/preview",
+    "youtube": "https://www.youtube.com/embed/NYAg3EqcJv0",
+    "desc": "11/11 - BOXVR - Student Choice Presentation"
   }
 ]
