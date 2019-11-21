@@ -100,6 +100,16 @@
     "desc": "Giving critical analysis (positives, and negatives) of Holoportation"
   },
   {
+    "name": "Student Choice Critiques (Week 12+13)",
+    "abbrev": "HW13",
+    "week": "12",
+    "type": "hw",
+    "title": "Student Choice Critiques",
+    "img": "/assets/hw13/thumbnail.jpg",
+    "src": "https://drive.google.com/file/d/1jlrdvLp8ZXGRuQpoU1Shz1wJpvrc2uV4/preview",
+    "desc": "Critiquing 2 student topics"
+  },
+  {
     "name": "You Can't Judge a Book by Its Cover",
     "abbrev": "p1",
     "week": "5",
