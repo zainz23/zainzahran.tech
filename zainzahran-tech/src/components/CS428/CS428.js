@@ -53,7 +53,8 @@ class CS428 extends React.Component {
                 { name: "hw13", isActive: false},
                 { name: "p1",  isActive: false},
                 { name: "p2",  isActive: false},
-                { name: "p3",  isActive: false}
+                { name: "p3",  isActive: false},
+                { name: "p4',  isActive: false}
             ]
         };
         this.handleClickOpen = this.handleClickOpen.bind(this);
