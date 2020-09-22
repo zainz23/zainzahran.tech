@@ -105,6 +105,9 @@ class CS428 extends React.Component {
                                                         style={{height: 160}}
                                                     />
                                                     <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="h2">
+                                                            {dataset[i].name}
+                                                        </Typography>
                                                         <Typography variant="body2" color="textSecondary" component="p">
                                                             {dataset[i].desc}
                                                         </Typography>
@@ -122,6 +125,10 @@ class CS428 extends React.Component {
                                                     <CloseIcon/>
                                                 </IconButton>
                                                 <DescriptionIcon/>
+                                                <Typography variant="h6" className={useStyles.title}
+                                                            style={{paddingLeft: 10}}>
+                                                    {dataset[i].name}
+                                                </Typography>
                                             </Toolbar>
                                         </AppBar>
                                         <Divider/>
@@ -134,7 +141,8 @@ class CS428 extends React.Component {
                                                 minHeight: '85vh',
                                             }}>
                                             <div>
-                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}/>
+                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}
+                                                        title={dataset[i].abbrev}/>
                                             </div>
                                         </Paper>
                                     </Dialog>
@@ -167,6 +175,9 @@ class CS428 extends React.Component {
                                                         style={{height: 160}}
                                                     />
                                                     <CardContent>
+                                                        <Typography gutterBottom variant="h5" component="h2">
+                                                            {dataset[i].name}
+                                                        </Typography>
                                                         <Typography variant="body2" color="textSecondary" component="p">
                                                             {dataset[i].desc}
                                                         </Typography>
@@ -184,6 +195,10 @@ class CS428 extends React.Component {
                                                     <CloseIcon/>
                                                 </IconButton>
                                                 <DescriptionIcon/>
+                                                <Typography variant="h6" className={useStyles.title}
+                                                            style={{paddingLeft: 10}}>
+                                                    {dataset[i].name}
+                                                </Typography>
                                             </Toolbar>
                                         </AppBar>
                                         <Divider/>
@@ -201,10 +216,12 @@ class CS428 extends React.Component {
                                                         src={dataset[i].youtube} frameBorder="0"
                                                         style={{width:'100%', minHeight: '63vh'} }
                                                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                                                        allowFullScreen />
+                                                        allowFullScreen
+                                                        title={dataset[i].abbrev}/>
                                                 {/* DOCUMENTATION */}
                                                 <h1>Documentation</h1>
-                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}/>
+                                                <iframe src={dataset[i].src} width="100%" style={{minHeight: '83vh'}}
+                                                        title={dataset[i].abbrev}/>
                                             </div>
                                         </Paper>
                                     </Dialog>
