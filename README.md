@@ -1,4 +1,4 @@
-### [Demo](https://zainzahran.tech/CS428)
+### [Demo](https://zain-zahran.netlify.app/CS428)
 
 ## How to add homework
 #### 1. Add relative state in CS428.js
